@@ -1,0 +1,14 @@
+.chores {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightseagreen;
+}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+li {
+    font-style: italic;
+    font-size: 16px;
+}
