@@ -1,8 +1,11 @@
 <div class='movies col-4'>
-    <h3>Movies to Watch</h3>
-    <ol>
-       <li *ngFor ="let movie of movies">{{movie}}</li>
-    </ol>
-    <hr>
-
- </div>
+   <h3>Movies to Watch</h3>
+   <ol>
+      <li *ngFor="let movie of movies">{{movie}}</li>
+   </ol>
+   <hr>
+   <input #newMovie (keyup.enter)="message = addMovie(newMovie.value); newMovie.value=''" type='text' placeholder="Enter Movie Title Here"/>
+   <!--<input #newMovie (click)='true' type='text' placeHolder="Enter Movie Title Here"/>-->
+   <button (click)='message = addMovie(newMovie.value); newMovie.value=""' style="border-radius: 10px; background-color: lightcoral; margin-top: 5px; font-family:Arial, Helvetica, sans-serif; padding: 15px; width: 175px; color: white;">Add Movie</button>
+   
+</div>

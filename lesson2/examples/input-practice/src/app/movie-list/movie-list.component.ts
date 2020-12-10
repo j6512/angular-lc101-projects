@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
+   movies = [];
 
    constructor() { }
 
    ngOnInit() {
+   }
+
+   addMovie(newTitle: string) {
+      if (!this.movies.includes(newTitle) && newTitle.length > 0) {
+         this.movies.push(newTitle);
+      }
    }
 }
