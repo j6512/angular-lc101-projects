@@ -1,9 +1,12 @@
 <div class="movies">
    <h3>Movies to Watch</h3>
    <ol>
+      <!--
       <li>{{movies[0]}}</li>
       <li>{{movies[1]}}</li>
       <li>{{movies[2]}}</li>
       <li>{{movies[3]}}</li>
+      -->
+      <li *ngFor="let movie of movies; let i = index; let first = first; let last = last; let even = even" [ngClass]="{even: even}">{{i + 5}}. {{movie}}</li>
    </ol>
 </div>
