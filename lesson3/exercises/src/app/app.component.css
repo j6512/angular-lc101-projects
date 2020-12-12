@@ -36,3 +36,7 @@ img {
 .container-control-buttons {
     text-align: center;
 }
+
+button {
+    border-radius: 10px;
+}
